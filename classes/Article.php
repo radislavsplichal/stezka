@@ -36,12 +36,16 @@ public function displayArticle () {
         <div class="col-md-10">
         <div class="panel panel-default">
         <div style="display: inline;" class="administration button-group pull-right" role="group" aria-label="...">
-        <form method="POST" action="deleteArticle.php">
+        <form method="POST" action="formHandle.php">
           <input type="hidden" name="id" value='.$this->id.'></input>
           <button type="button" title="Odstranit článek" onClick="this.parentNode.submit();" class="glyphicon glyphicon-remove" aria-hidden="true"></button>
-        </form><form method="POST" action="editArticle.php">
+          <!-- Hidden input types -->
+          <input type="hidden" name="formType" value="delete"></input>
+        </form><form method="POST" action="formHandle.php">
           <input type="hidden" name="id" value='.$this->id.'></input>
           <button type="button" title="Upravit článek" onClick="this.parentNode.submit();" class="glyphicon glyphicon-pencil" aria-hidden="true"></button>
+          <!-- Hidden input types -->
+          <input type="hidden" name="formType" value="edit"></input>
         </form>
         </div>
         <div class="panel-heading"><b>'.$this->title.'</b></br>
@@ -69,7 +73,7 @@ public function editArticle($id, $article, $title){
 $date = date('d.m.Y');
 
 $arguments[0] = 'article';
-$arguments[1] = "dateUploaded";
+$arguments[1] = "dateUpdated";
 $arguments[2] = 'title';
 
 $values[0] = $article;

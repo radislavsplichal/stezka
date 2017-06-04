@@ -25,8 +25,9 @@ class Lilly {
 		$this->conn = new mysqli($servername, $username, $password, $dbname);
 		// Check connection
 		if ($this->conn->connect_error) {
-			die("Connection failed: " . $conn->connect_error);
-			echo '<div class="alert alert-danger" role="alert">'."Error: " . $sql . "<br>" . $conn->error;
+			die("Connection failed: " . $this->$conn->connect_error);
+			echo '<div class="alert alert-danger" role="alert">'."Error: " . $sql . "<br>" . $this->$conn->error;
+
 		}
 
 	}
@@ -36,8 +37,8 @@ class Lilly {
 			$response = ['OK'];
 			return $response;
 		} else {
-			echo "Error: " . $sql . "<br>" . $conn->error;
-			$response = ['Connection Error',$conn->error];
+			echo "Error: " . $sql . "<br>" . $this->conn->error;
+			$response = ['Connection Error',$this->conn->error];
 			return $response;
 		}
 	}
@@ -66,12 +67,17 @@ class Lilly {
 		$this->establishConnection();
 		for ($i=0;$i<count($arguments);$i++) {
 
-			$sql[i] = "UPDATE $type SET $arguments[i] = $values[i] WHERE id=$id";
+			$sql = "UPDATE $type SET $arguments[$i] = '$values[$i]' WHERE id='$id'";
 
-			$this->executeQuerry($sql[i]);
+			$this->executeQuerry($sql);
 		}
 
 	}
+
+	// public function listenForInput($type,$operation,$input){
+	// 	$object new $type;
+	// 	$object->$peration+$type($input);
+	// }
 
 }
 

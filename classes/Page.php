@@ -89,7 +89,7 @@ $articleToEdit = $this->articles[$id];
 //var_dump($this->articles[$id]);
   echo '
   <div id="editArticleForm" class="col-md-6 col-md-offset-3 col-xs-offset-1">
-    <form action="editArticle.php" method="POST">
+    <form action="formHandle.php" method="POST">
       <input name="id" type="hidden" value="'.$id.'"></input>
       <div class="form-group">
         <label for="title">Title</label>
@@ -98,10 +98,12 @@ $articleToEdit = $this->articles[$id];
 
       <textarea id="editor1" name="article" class="form-control" rows="3" >'.$articleToEdit->article.'</textarea>
 
-
+      <!-- Hidden input types -->
+      <input type="hidden" name="formType" value="edit"></input>
 
       <br>
       <button type="submit" class="btn btn-primary">Submit</button>
+
     </form>
 
   </div>
