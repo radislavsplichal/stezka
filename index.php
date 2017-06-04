@@ -83,7 +83,7 @@ window.cookieconsent.initialise({
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
             <li><a href="router.php?activePage=1">O Projektu</a></li>
-            <li><a href="router.php?activePage=2">Zasteveni</a></li>
+            <li><a href="router.php?activePage=2">Zastaveni</a></li>
           </ul>
         <ul class="nav navbar-nav navbar-right">
           <li>
@@ -139,10 +139,10 @@ window.cookieconsent.initialise({
                     include 'landingPage.php';
                     break;
                 case 1:
-                    include 'cv.php';
+                    include 'blog.php';
                     break;
                 case 2:
-                    include 'blog.php';
+                    include 'zastavka/zastavka1.php';
                     break;
                 case 3:
                     include 'shoppingList/index.php';
