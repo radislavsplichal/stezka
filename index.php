@@ -127,6 +127,21 @@ window.cookieconsent.initialise({
 
 
   <div class="container">
+
+<!-- administration -->
+
+<div class="list-group administration">
+  <!-- <a href="#" class="list-group-item active">
+    Cras justo odio
+  </a> -->
+  <a href="#" class="list-group-item">Manage Users</a>
+  <a href="#" class="list-group-item">Manage Zastaveni</a>
+  <a href="#" class="list-group-item">Manage Articles</a>
+  <a href="#" class="list-group-item">Manage Lilly</a>
+</div>
+
+
+
     <?php
 
 
