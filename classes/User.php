@@ -1,11 +1,11 @@
 <?php
 // This class handles the users and login functionality
 class User {
-    public $rights;
-    public $firstName;
-    public $lastName;
-    public $password;
-    public $userName;
+    private $rights;
+    private $firstName;
+    private $lastName;
+    private $password;
+    private $userName;
 
 // Function Verifies Login from login.php and sets the $_SESSION['username']  acordingly
     public function login($conn, $userName, $password){
@@ -19,7 +19,7 @@ class User {
           if($userName == $row["userName"] && password_verify($password,$row["password"])){
           $_SESSION['valid'] = true;
           $_SESSION['timeout'] = time();
-          $_SESSION['username'] = 'admin';
+          $_SESSION['username'] = 'Admin';//$userName;
 
           echo 'You have entered valid use name and password';
           if (isset($_SESSION['status'])){
@@ -43,7 +43,15 @@ class User {
 
 
     public function createUser($userName, $password, $firstName, $lastName, $rights) {
-
+      //password hash function needed
+      $values = $userName."','".$firstName."','".$lastName."','".$rights."','".$password;
+      $arguments = "userName,firstName,lastName,rights,password";
+      $bot = new Lilly;
+      $bot->saveObject($this->type,$arguments,$values);
+    }
+    public function deleteUser($id){
+      $bot = new Lilly;
+      $bot->deleteObject($id,$this->type);
     }
     public function editUser() {
 

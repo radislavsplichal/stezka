@@ -76,7 +76,7 @@ $website->showArticles($conn);
 
 
     <div id="newArticleForm" class="col-md-6 col-md-offset-2 col-xs-offset-1">
-      <form action="saveArticle.php" method="get">
+      <form action="formHandle.php" method="get">
         <div class="form-group">
           <label for="title">Add a new article</label>
           <input type="text" name="title" class="form-control" id="title" placeholder="Title" required>
@@ -88,6 +88,8 @@ $website->showArticles($conn);
 
         <br>
         <button type="submit" class="btn btn-primary">Submit</button>
+        <!-- Hidden input types -->
+        <input type="hidden" name="formType" value="insert"></input>
       </form>
 
     </div>

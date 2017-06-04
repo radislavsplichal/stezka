@@ -4,18 +4,20 @@
 //include ('databaseConnection.php');
 //include ('Lilly.php');
 //echo $servername;
-class Article
+class Zastaveni
 {
   //properties
-  private $type = "articles";
-  public $id;
-  public $dateCreated;
-  public $dateUpdated;
-  public $article;
-  public $title;
-  public $querry;
+  private $type = "zastaveni";
+  private $id;
+  private $textDesc;
+  private $title;
+  private $dateUpdated;
 
-public function insertArticle ($title, $text) {
+
+
+  
+
+public function insertZastaveni ($title, $text) {
 	$date = date('d.m.Y');
 	$author = "Admin";
 	$arguments ="author, article, dateCreated, title";
@@ -24,13 +26,13 @@ public function insertArticle ($title, $text) {
 
 	$bot = new Lilly;
 	$bot->saveObject($this->type,$arguments,$values);
-	echo 'Article Saved';
+	echo 'zastaveni Saved';
 }
   //$sql = "INSERT INTO articles (author, article, dateCreated, title) VALUES ('$author', '$text', '$date', '$title');";
 
 
 
-public function displayArticle () {
+public function displayZastaveni () {
   echo '<div id="'.$this->id.'" class="row">
         <div class="col-md-1"></div>
         <div class="col-md-10">
@@ -62,14 +64,14 @@ public function displayArticle () {
         </div>';
 }
 
-public function deleteArticle($id){
+public function deleteZastaveni($id){
 $bot = new Lilly;
 $bot->deleteObject($id,$this->type);
 
  }
 
 
-public function editArticle($id, $article, $title){
+public function editZastaveni($id, $article, $title){
 $date = date('d.m.Y');
 
 $arguments[0] = 'article';
