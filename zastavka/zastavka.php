@@ -23,7 +23,7 @@
       <div class="row">
         <div class="caption">
 
-              <div class="carousel-controls">
+              <!-- <div class="carousel-controls">
                 <div class="pull-left">
                   <a href="#carousel-example-generic" role="button" data-slide="prev">
                     <span class="glyphicon glyphicon glyphicon-arrow-left" aria-hidden="true"></span>
@@ -35,15 +35,13 @@
                     <span class="glyphicon glyphicon glyphicon-arrow-right" aria-hidden="true"></span>
                     <span class="sr-only">Next</span>
                   </a>
-                </div>
+                </div> -->
                 <h2>DBTitle Zastaveni IV</h2>
-
-              </div>
-
         </div>
+      </div>
 
 
-        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="false">
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-wrap="false" data-interval="false">
 
           <!-- Wrapper for slides -->
           <div class="carousel-inner" role="listbox">
