@@ -19,9 +19,6 @@
       display: block;
       margin: auto;
   }
-  .carousel-inner {
-      min-height: 100%;
-  }
   </style>
 </head>
 <body>
