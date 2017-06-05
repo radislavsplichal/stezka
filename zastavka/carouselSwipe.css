@@ -1,3 +1,12 @@
+body {
+    color: white;
+    background: black;
+    font-size: medium;
+}
+div {
+    color: white;
+    background: black;
+}
 .pict {
     display: block;
     margin: auto;
@@ -5,4 +14,17 @@
 
 .carousel-inner {
     min-height: 100%;
+}
+
+@media (max-width: @screen-xs) {
+    body{font-size: 10px;}
+}
+
+@media (max-width: @screen-sm) {
+    body{font-size: 14px;}
+}
+
+
+h5{
+    font-size: 1.4em;
 }
