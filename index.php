@@ -157,7 +157,7 @@ window.cookieconsent.initialise({
                     include 'blog.php';
                     break;
                 case 2:
-                    include 'zastavka/zastavka1.php';
+                    include 'zastavka/zastavka.php';
                     break;
                 case 3:
                     include 'shoppingList/index.php';
