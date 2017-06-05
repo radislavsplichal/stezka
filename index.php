@@ -83,7 +83,8 @@ window.cookieconsent.initialise({
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
             <li><a href="router.php?activePage=1">O Projektu</a></li>
-            <li><a href="zastavka/zastavka.php">Zastaveni</a></li>
+            <li><a href="router.php?activePage=2">Zastaveni in-page</a></li>
+            <li><a href="zastavka/zastavka.php">Zastaveni FULL</a></li>
           </ul>
         <ul class="nav navbar-nav navbar-right">
           <li>
