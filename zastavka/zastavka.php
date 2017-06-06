@@ -36,7 +36,7 @@
                     <span class="sr-only">Next</span>
                   </a>
                 </div>
-                <h2>DBTitle Zastaveni IV</h2>
+                <!-- <h2>DBTitle Zastaveni IV</h2> -->
         </div>
       </div>
 
@@ -46,16 +46,19 @@
           <!-- Wrapper for slides -->
           <div class="carousel-inner" role="listbox">
             <div class="item active">
-              <img class="pict" src="http://www.farnostzebetin.cz/wp-content/gallery/krizova-cesta-v-kostele-sv-bartolomeje/KC-04.jpg" alt="DBPicture">
+              <div class="thumbnail-responsive">
+                <img class="pict" src="../media/images/04_Pán Ježíš potkává svou Matku.jpg" alt="Zastavení IV: Pán Ježíš potkává svou Matku">
+              </div>
             </div>
             <div class="item">
-              <h2>DBInfoTitle Zastavení IV: "Ná, tady máš svůj hřebík..."</h2>
+              <h2>DBInfoTitle Zastavení IV</h2>
               <p>DBInfoText<p>
-              <p>Toto zobrazení připomíná toho malýho zmetka, co našel Ježíšův "ztracený" hřebík.</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempor vel ante non suscipit. Ut ex felis, scelerisque in nulla vitae, viverra aliquam dui. Sed lacus leo, pellentesque id cursus id, fermentum eget arcu. In vel felis et nibh scelerisque finibus ac non risus. Sed sed dignissim mi. Morbi sagittis eros nec porta pretium. Curabitur fermentum leo quis justo vestibulum, ac commodo diam vulputate. Donec in congue justo. Nam blandit tincidunt justo sed rutrum.</p>
-              <p>Pellentesque id est a libero fringilla laoreet. Phasellus ac tincidunt dui. Sed auctor tortor vitae arcu posuere feugiat. Duis at pellentesque metus. Nunc condimentum at lorem bibendum malesuada. Nullam ac ante lectus. Fusce id urna sed nunc fermentum sagittis. Vivamus ac egestas diam. Sed interdum turpis in ante cursus, sed iaculis nulla blandit. Quisque eleifend odio eu augue tincidunt, semper sollicitudin leo ultricies. Sed commodo eros eu hendrerit bibendum. Pellentesque luctus gravida tellus in tincidunt. Nullam venenatis congue magna, quis lobortis augue luctus sit amet.</p>
-              <p>Duis sit amet congue enim, id pellentesque mauris. Fusce a lacinia neque, a pellentesque quam. Integer interdum rhoncus augue, dictum varius ligula finibus at. Vestibulum sed mauris eu velit volutpat ultricies. Nam euismod ac ligula sed vestibulum. Ut molestie, lacus vel ultrices vestibulum, felis tortor mollis ante, sed blandit orci lectus vitae dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc fermentum metus nibh, eget eleifend velit vehicula in. Quisque nec tortor turpis. Aliquam sollicitudin, odio sit amet tincidunt varius, neque felis accumsan metus, in blandit quam nibh quis purus. Mauris sapien dui, dictum in rutrum eget, varius quis eros.</p>
-              <p>KÁMEN</p>
+              <p>Synům hlásal jsem, by Matky ctili!<br>
+                	Za to na mé Máteři se mstili;<br>
+                  když mne potkala, křik divý zněl,<br>
+                  z hoře jejího lid posměch měl.<br>
+                  Sám Bůh oblíbil si její ctnosti,<br>
+                  lidé spílali jí ve své zlosti.</p>
             </div>
           </div>
 

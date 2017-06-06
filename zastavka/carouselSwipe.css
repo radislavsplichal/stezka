@@ -1,7 +1,7 @@
-body {
+body,html {
     color: white;
     background: black;
-    font-size: medium;
+    font-size: large;
 }
 div {
     color: white;
@@ -10,6 +10,8 @@ div {
 .pict {
     display: block;
     margin: auto;
+    width: auto;
+    height: 100%
 }
 
 .carousel-inner {
